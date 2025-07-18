@@ -108,61 +108,74 @@
 </div>
 
 
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="images/home_3_slider.png" alt="Cairo" class="d-block w-100" />
-          <div class="carousel-caption bg-success bg-opacity-50">
-            <span class="text-uppercase fs-1">Helping Hands for a Better Future</span>
-            <p>Join us in our mission to create lasting positive change in communities.</p>
-            <button class="btn btn-light me-2 text-success fw-bold bg-gradient">
-                         Discover More
-            </button>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="images/home_2_slide.png" alt="Aswan" class="d-block w-100" />
-          <div class="carousel-caption bg-success bg-opacity-50">
-            <span class="text-uppercase fs-1">Empowering Communities Together</span>
-            <p>Your involvement strengthens our ability to reach those who need it most.</p>
-            <button class="btn btn-light me-2 text-success  fw-bold bg-gradient">
-              Get Involved
-            </button>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img
-            src="images/home_4.png"
-            alt="Sharm El Shikh"
-            class="d-block w-100"
-          />
-          <div class="carousel-caption bg-success bg-opacity-50">
-            <span class="text-uppercase fs-1">Making a Tangible Impact</span>
-            <p>Every contribution, big or small, helps us build a more equitable world.</p>
-            <button class="btn btn-light me-2 text-success  fw-bold bg-gradient">
-              Support Our Causes
-            </button>
-          </div>
-        </div>
-       
-      </div>
+  <div id="demo" class="carousel slide" data-bs-ride="carousel">
+  <!-- Carousel Indicators -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
 
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#demo"
-        data-bs-slide="prev"
-      >
-        <span class="carousel-control-prev-icon"></span>
-      </button>
-      <button
-        class="carousel-control-next "
-        type="button"
-        data-bs-target="#demo"
-        data-bs-slide="next"
-      >
-        <span class="carousel-control-next-icon"></span>
-      </button>
+  <!-- Carousel Inner (Slides) -->
+  <div class="carousel-inner">
+    <!-- First Carousel Item -->
+    <div class="carousel-item active">
+      <!-- Image: d-block w-100 for full width, min-height and object-fit for responsiveness, onerror for fallback -->
+      <img src="images/home_3_slider.png" alt="Cairo" class="d-block w-100" style="min-height: 300px; object-fit: cover;" onerror="this.onerror=null;this.src='https://placehold.co/1200x500/008000/FFFFFF?text=Image+1+Unavailable';" />
+      <div class="carousel-caption bg-success bg-opacity-50 rounded-lg p-3 p-md-4">
+        <!-- Caption Title: fs-3 for small screens, fs-1 for medium and up -->
+        <span class="text-uppercase fs-3 fs-md-1 fw-bold">Helping Hands for a Better Future</span>
+        <!-- Caption Paragraph: fs-6 for small, fs-5 for medium and up -->
+        <p class="fs-6 fs-md-5 mt-2">Join us in our mission to create lasting positive change in communities.</p>
+        <button class="btn btn-light me-2 text-success fw-bold bg-gradient rounded-pill px-4 py-2 mt-3">
+          Discover More
+        </button>
+      </div>
     </div>
+
+    <!-- Second Carousel Item -->
+    <div class="carousel-item">
+      <!-- Image: d-block w-100 for full width, min-height and object-fit for responsiveness, onerror for fallback -->
+      <img src="images/home_2_slide.png" alt="Aswan" class="d-block w-100" style="min-height: 300px; object-fit: cover;" onerror="this.onerror=null;this.src='https://placehold.co/1200x500/008000/FFFFFF?text=Image+2+Unavailable';" />
+      <div class="carousel-caption bg-success bg-opacity-50 rounded-lg p-3 p-md-4">
+        <!-- Caption Title -->
+        <span class="text-uppercase fs-3 fs-md-1 fw-bold">Empowering Communities Together</span>
+        <!-- Caption Paragraph -->
+        <p class="fs-6 fs-md-5 mt-2">Your involvement strengthens our ability to reach those who need it most.</p>
+        <button class="btn btn-light me-2 text-success fw-bold bg-gradient rounded-pill px-4 py-2 mt-3">
+          Get Involved
+        </button>
+      </div>
+    </div>
+
+    <!-- Third Carousel Item -->
+    <div class="carousel-item">
+      <!-- Image: d-block w-100 for full width, min-height and object-fit for responsiveness, onerror for fallback -->
+      <img src="images/home_4.png" alt="Sharm El Shikh" class="d-block w-100" style="min-height: 300px; object-fit: cover;" onerror="this.onerror=null;this.src='https://placehold.co/1200x500/008000/FFFFFF?text=Image+3+Unavailable';" />
+      <div class="carousel-caption bg-success bg-opacity-50 rounded-lg p-3 p-md-4">
+        <!-- Caption Title -->
+        <span class="text-uppercase fs-3 fs-md-1 fw-bold">Making a Tangible Impact</span>
+        <!-- Caption Paragraph -->
+        <p class="fs-6 fs-md-5 mt-2">Every contribution, big or small, helps us build a more equitable world.</p>
+        <button class="btn btn-light me-2 text-success fw-bold bg-gradient rounded-pill px-4 py-2 mt-3">
+          Support Our Causes
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Carousel Control - Previous Button -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <!-- Carousel Control - Next Button -->
+  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
     <ul
       class="list-unstyled position-fixed top-50 end-0 translate-middle-y z-3"
     >
